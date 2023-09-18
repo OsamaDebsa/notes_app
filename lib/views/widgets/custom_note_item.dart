@@ -18,7 +18,7 @@ class CustomNoteItem extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 ListTile(
-                  contentPadding: const EdgeInsets.all(0),
+                  contentPadding: EdgeInsets.zero,
                   title: const Text(
                     "Flutter Tips",
                     style: TextStyle(
