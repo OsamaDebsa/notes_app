@@ -8,7 +8,12 @@ class CustomAppBar extends StatelessWidget {
     return AppBar(
       elevation: 0,
       title: const Text("Notes"),
-      actions: const [CustomSearchIcon()],
+      actions: const [
+        Padding(
+          padding: EdgeInsets.only(right: 16),
+          child: CustomSearchIcon(),
+        )
+      ],
     );
   }
 }

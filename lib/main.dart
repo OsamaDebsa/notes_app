@@ -16,6 +16,7 @@ class NotesApp extends StatelessWidget {
         // brightness: Brightness.light,
         // scaffoldBackgroundColor: Colors.white,
         brightness: Brightness.dark,
+        fontFamily: "Poppins",
         useMaterial3: true,
       ),
       home: const NotesView(),
