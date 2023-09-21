@@ -1,10 +1,10 @@
 import 'package:hive/hive.dart';
 
 part 'note_model.g.dart';
-
-// after write part''; it give with me error and run this line in trminal :
+// at first write your model then write @HiveType(typeId: ) and @HiveField() then
+// write part''; then it will give with me error and run this line in trminal :
 // flutter packages pub run build_runner build
-// an then go to main
+// an then go to main to make init hive and open notes box
 
 @HiveType(typeId: 0)
 class NoteModel extends HiveObject {
