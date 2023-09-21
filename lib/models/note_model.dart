@@ -1,6 +1,7 @@
 import 'package:hive/hive.dart';
 
 part 'note_model.g.dart';
+
 // at first write your model then write @HiveType(typeId: ) and @HiveField() then
 // write part''; then it will give with me error and run this line in trminal :
 // flutter packages pub run build_runner build
