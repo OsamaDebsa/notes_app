@@ -23,9 +23,13 @@ class AddNoteBottomSheet extends StatelessWidget {
           // AbsorbPointer : use to stop user to take any action in screen until Loading Finish.
           return AbsorbPointer(
             absorbing: state is AddNoteLoading ? true : false,
-            child: const Padding(
-              padding: EdgeInsets.all(16),
-              child: SingleChildScrollView(child: AddNoteForm()),
+            child: Padding(
+              padding: EdgeInsets.only(
+                  left: 16,
+                  top: 16,
+                  right: 16,
+                  bottom: MediaQuery.of(context).viewInsets.bottom),
+              child: const SingleChildScrollView(child: AddNoteForm()),
             ),
           );
         },
