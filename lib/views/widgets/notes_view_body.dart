@@ -19,11 +19,15 @@ class _NotesViewBodyState extends State<NotesViewBody> {
   }
 
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Column(
         children: [
-          CustomAppBar(title: "Notes", icon: Icons.search),
-          Expanded(
+          CustomAppBar(
+            title: "Notes",
+            icon: Icons.search,
+            onTab: () {},
+          ),
+          const Expanded(
             child: NotesListView(),
           ),
         ],
